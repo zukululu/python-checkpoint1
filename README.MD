@@ -18,8 +18,8 @@ Completing the Checkpoint & Running the Test
 - Keeping the problems solve, your focus small, will make the problems easier to solve
 
 #### Run the following commands to: clone the repo, enter the directory, create the environment, activate the environment, install the test dependencies in to the environment 
-git clone </br>
-cd </br>
+git clone git@github.com:ga-wdi-exercises/python-checkpoint1.git</br>
+cd python-checkpoint1</br>
 python3 -m virtualenv .env</br>
 source .env/bin/activate</br>
 pip install -r requirements.txt</br>
