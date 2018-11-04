@@ -11,7 +11,6 @@ sys.path.insert(0, parentdir)
 
 import oop as OOP_Module
 
-
 with open(currentdir + '/../oop.py', 'r') as myfile:
     file_data = myfile.read().replace('\n', '')
 
@@ -29,6 +28,7 @@ vehicle_dict_car = {
     "colors": "gray",
     "vehicle_brand": "Ford"
 }
+
 vehicle_dict_motorcycle = {
     "vehicle_type": "Motorcycle",
     "wheel_count": 2,
@@ -75,7 +75,6 @@ motorcycle2 = OOP_Module.Motorcycle(vehicle_dict_motorcycle_2)
 motorcycle = OOP_Module.Motorcycle(vehicle_dict_motorcycle)
 car = OOP_Module.Car(vehicle_dict_car)
 
-
 # TEST AS STRING
 def test_file_as_string0():
     assert "class Car" in file_data, "the oop file does not contain the class `Car`"
@@ -85,7 +84,7 @@ def test_file_as_string1():
     assert "def can_drive(self):" in file_data, 'you need to create the can_drive method in the car class'
 def test_file_as_string2():
     assert "def __init__" in file_data, "each class needs an initialization method"
-    assert "self.wheel_drive = wheel_drive" in file_data, "each class should have the wheel_drive property"
+    assert "self.wheel_drive" in file_data, "each class should have the wheel_drive property"
 
 # TEST INHERITANCE OF CLASSES
 def test_inheritance():
@@ -95,7 +94,6 @@ def test_inheritance():
         0] == OOP_Module.Vehicle, "the class 'Truck' does not inherit from the 'Vehicle' class"
     assert OOP_Module.Motorcycle.__bases__[
         0] == OOP_Module.Vehicle, "the class 'Motorcycle' does not inherit from the 'Vehicle' class"
-
 
 # CAR Datatypes
 def test_car_data_types0():
@@ -146,7 +144,6 @@ def test_motorcycle_methods():
     assert motorcycle.pop_wheelie(
     ) == "......pop!", "the motorcycle class method pop_wheelie is not returning '......pop!' if the wheel count is 2 "
     assert motorcycle2.pop_wheelie() == "can't pop wheelie....must be a slingshot!", "the motorcycle class method pop_wheelie should return 'can't pop wheelie....must be a slingshot!' if the wheel count is not 2"
-
 
 # TRUCK Data Types
 def test_truck_data_types0():
