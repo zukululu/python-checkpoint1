@@ -1,17 +1,14 @@
-#methods.py
-# Create the following methods and make sure they return the correct data type and/or value
-# - num_list_with_arg, it should take one argument that is an integer, assume that integer is a positive number above 1. it should return a list of integers from 1 to the argument that is provided to the method
-# - has_ruby_exp, this method is already created but needs modifications. it should 
-#     - in the method create a list called ruby_experience
-#     - iterate through the dictionary experience and add the name of the teachers that have ruby experience to the ruby_experience list
-#     - then sort the list
-#     - return the list
-# - toggle_str_num, this method should be provided an arugment
-#     - if the arugment is a string, change it to a number and return it
-#     - if ithe argument is an integer, change it to a string and return iter
-#     - if it is neither return "this is not a str or a int"
+# Create the following methods and make sure they return the correct data type
+# and/or value
 
+# #1: Create a method called num_list_with_arg that takes a positive integer and
+# returns a list of integers between 1 and the number passed in.
+#
+# So if the number 5 is passed in, num_list_with_arg should return [1, 2, 3, 4,
+# 5]
 
+# #2: Modify the has_ruby_exp method below so that it returns a sorted list of
+# all instructors who have Ruby experience (i.e. "ruby" = True)
 
 def has_ruby_exp():
     experience = {
@@ -48,3 +45,11 @@ def has_ruby_exp():
             'pasta': False
         }
     }
+
+# #3: Create a method called toggle_str_num that takes an argument. If the
+# argument is a string, convert it to an integer and return the integer; If the
+# argument is an integer, convert it to a string and return the string; If the
+# argument is neither a string nor an integer, return the string "this is not a
+# str or a int":
+
+# Commit when you finish working on these questions!
