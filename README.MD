@@ -1,30 +1,39 @@
 # Python Checkpoint 1
 
-## There are 33 tests(assertions) total. 
+## Before You Start
 
-#### You must get at least 60% to pass the checkpoint. This is equatable to passing at least 20 tests.
+**Before you begin anything:**
 
-In the checkpoint directory you will find 3 files
+* Create a new virtual environment (`python3 -m virtualenv .env`)
+* Activate the virtual environment (`source .env/bin/activate`)
+* Install the dependencies in `requrements.txt` (`pip install -r
+    requirements.txt`)
+* run `pytest` to check that the test are working (`pytest`)
 
-data_types.py</br>
-methods.py</br>
-oop.py
+To run the tests in the terminal, run `pytest`. Every time you make a change and
+save your files, you will need to manually re-run the tests. When you start, all
+of the tests will be failing; your goal is to make as many pass as you can in
+the hour provided.
 
-Completing the Checkpoint & Running the Test
-- There are instructions in side each of the files to guide you to passing the test.
-- Additionally, if you attempt to run the test with `pytest`, it will give you an error message guiding you to what is needed to pass the test
-- When running pytest it may not give you an accurate count of the tests, it counts only up to the tests that are complete
-- Take the tests and instructions one step at a time
-- Keeping the problems solve, your focus small, will make the problems easier to solve
+> HINT: read the output of the failing tests.
 
-#### Run the following commands to: clone the repo, enter the directory, create the environment, activate the environment, install the test dependencies in to the environment 
-git clone git@github.com:ga-wdi-exercises/python-checkpoint1.git</br>
-cd python-checkpoint1</br>
-python3 -m virtualenv .env</br>
-source .env/bin/activate</br>
-pip install -r requirements.txt</br>
-pytest
+## Instructions
 
-## Exit and deactivate enviroment (You shouldn't need to run this!!!)
-deactivate
-rm -r .env
+This checkpoint is divided into three sections:
+
+* Data Types in `data_types.py`
+* Methods in `methods.py`
+* Object Oriented Programming in `oop.py`
+
+Each section has a series of prompts written in inline comments. Write the
+Python necessary to complete each prompt in each of the three files.
+
+**Make a commit after you complete each section.**
+
+**DO NOT** Modify the files in the `tests/` folder.
+
+## Submission
+Fork this repository and clone your fork locally. Commit as you go. When you are
+finished, push your commits to GitHub.
+
+**Wait until the end of the hour to make your Pull Request.**
