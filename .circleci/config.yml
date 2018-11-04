@@ -43,6 +43,7 @@ jobs:
       - run:
           name: run tests
           command: |
+            ls
             pytest
 
       - store_artifacts:
