@@ -22,29 +22,27 @@ jobs:
 
       # Download and cache dependencies
       - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "requirements.txt" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
+          key: v1-dependencies-{{ checksum "requirements.txt" }}
 
       - run:
           name: install dependencies
           command: |
             python3 -m venv venv
-            source ./venv/bin/activate
+            . venv/bin/activate
             pip install -r requirements.txt
+            pytest
 
       - save_cache:
           paths:
-            - ./venv
+            - "venv"
           key: v1-dependencies-{{ checksum "requirements.txt" }}
 
       # run tests!
-      - run:
-          name: run tests
-          command: |
-            ls
-            pytest
+      # - run:
+      #     name: run tests
+      #     command: |
+      #       ls
+      #       pytest
 
       - store_artifacts:
           path: test-reports
