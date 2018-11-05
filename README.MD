@@ -4,8 +4,8 @@
 
 **Before you begin anything:**
 
-* Create a new virtual environment (`python3 -m virtualenv .env`)
-* Activate the virtual environment (`source .env/bin/activate`)
+* Create a new virtual environment (`python3 -m virtualenv <path-to-virtualenv>`)
+* Activate the virtual environment (`source <path-to-virtualenv>/bin/activate`)
 * Install the dependencies in `requrements.txt` (`pip install -r
     requirements.txt`)
 * run `pytest` to check that the test are working (`pytest`)
