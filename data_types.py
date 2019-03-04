@@ -5,7 +5,12 @@
 #     - "windows_count" -> data_type: int, value: 8
 #     - "glare" -> data_type: boolean, value: True
 
-
+dictionary_classroom = {
+  'chairs': 35,
+  'name': 'CR3',
+  'windows_count': 8,
+  'glare': True
+}
 
 
 # #2: Create a list called "num_list" withs values 1 through 4 in it:
