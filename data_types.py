@@ -15,6 +15,7 @@ dictionary_classroom = {
 
 # #2: Create a list called "num_list" withs values 1 through 4 in it:
 
+num_list = [1, 2, 3, 4]
 
 # #3: Create a list called "teacher_list" with the strings "zakk", "don",
 # "jimmy", and "hector" in it:
