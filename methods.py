@@ -7,10 +7,16 @@
 # So if the number 5 is passed in, num_list_with_arg should return [1, 2, 3, 4]
 
 def num_list_with_arg(num):
+    new_list = []
+    i = 1
     if num > 0:
-        for i in num:
+        while i < num:
             new_list.append(i)
-            return new_list
+            i += 1
+            print(new_list)
+    if num <= 0:
+        return
+num_list_with_arg(6)
 
 
 # #2: Modify the has_ruby_exp method below so that it returns a SORTED list of
@@ -55,7 +61,9 @@ def has_ruby_exp():
             'pasta': False
         }
     }
-    
+    for instructor in experience:
+        print(instructor)
+
 
 
 # #3: Create a method called toggle_str_num that takes an argument. If the
@@ -63,6 +71,14 @@ def has_ruby_exp():
 # argument is an integer, convert it to a string and return the string; If the
 # argument is neither a string nor an integer, return the string "this is not a
 # str or a int":
+
+def toggle_str_num(arg):
+    if type(arg) == str:
+        return int(arg)
+    elif type(arg) == int:
+        return str(arg)
+    else:
+        return "this is not a str or a int"
 
 
 # Commit when you finish working on these questions!

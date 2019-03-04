@@ -19,15 +19,8 @@
 # attributes. Define the properties on the class from the dict that is passed in.
 
 class Vehicle:
-    def __init__(self, vehicle_type, wheel_count, name, cost, colors, vehicle_brand, mpg = { 'city', 'highway', 'combined' }):
-        self.vehicle_type = vehicle_type
-        self.wheel_count = wheel_count
-        self.name = name
-        self.cost = cost
-        self.colors = colors
-        self.vehicle_brand = vehicle_brand
-        self.mpg = mpg
-
+    def __init__(self, dict):
+        vehicle_type = dict['vehicle_type']
     def get_vehicle_type(self):
         return self.vehicle_type
 
