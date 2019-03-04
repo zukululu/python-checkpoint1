@@ -20,5 +20,6 @@ num_list = [1, 2, 3, 4]
 # #3: Create a list called "teacher_list" with the strings "zakk", "don",
 # "jimmy", and "hector" in it:
 
+teacher_list = ['zakk', 'don', 'jimmy', 'hector']
 
 # Commit when you finish working on these questions!
