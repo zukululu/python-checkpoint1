@@ -6,6 +6,8 @@
 #     - "glare" -> data_type: boolean, value: True
 
 
+
+
 # #2: Create a list called "num_list" withs values 1 through 4 in it:
 
 
